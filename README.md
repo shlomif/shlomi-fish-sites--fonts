@@ -27,3 +27,12 @@ These files are taken from https://mageia.pkgs.org/cauldron/mageia-core-release-
 * `LinLibertine_RIah.ttf`
 * `LinLibertine_RZah.ttf`
 * `LinLibertine_RZIah.ttf`
+
+
+## Blue Highway
+
+Taken from https://www.1001fonts.com/blue-highway-font.html
+
+* `Bluehigb.ttf`
+* `Bluehigc.ttf`
+* `Bluehigh.ttf`
