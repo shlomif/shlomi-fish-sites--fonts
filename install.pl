@@ -27,8 +27,10 @@ use autodie;
 
 use Path::Tiny qw/ path tempdir tempfile cwd /;
 
-my $HOME      = $ENV{HOME};
-my $fonts_dir = path($HOME)->child(".fonts");
+my $LOCAL = ( @ARGV ? ( shift(@ARGV) eq "--local" ) : 0 );
+my $HOME  = $ENV{HOME};
+my $fonts_dir =
+    path($HOME)->child( $LOCAL ? ( ".local", "share", "fonts" ) : (".fonts") );
 $fonts_dir->mkpath();
 foreach my $font ( cwd()->children(qr/\.ttf\z/) )
 {
